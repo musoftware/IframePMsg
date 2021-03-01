@@ -1,5 +1,5 @@
 var receiveMessage = function(event) {
-   
+    console.log(event.data);
     if (event.data.startsWith("AutoHeight:V")){
         let getIframe = document.getElementsByTagName('iframe');
         if (getIframe.length > 0){
